@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>El mapa de errores de Sofía</title>
+  <meta name="description" content="Actividad de emparejamiento de la Unidad 3: relaciona los comportamientos de Sofía con el concepto que los explica y la recomendación que la ayuda.">
+  <meta name="keywords" content="metacognición, neuroeducación, error, plasticidad cerebral, control ejecutivo">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon_escudo.ico" rel="icon">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Estilos de la actividad -->
+  <link href="assets/css/mapa-errores.css" rel="stylesheet">
+
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center nombre-curso">
+          <i class="bi bi-box-arrow-right d-flex align-items-center"><a>Aprender a aprender.</a></i>
+        </div>
+        <div class="social-links d-md-flex align-items-center">
+          <button class="switch botones-ayudas" id="switch" aria-label="Cambiar a modo oscuro"><i class="bi bi-moon-stars-fill"></i></button>
+          <button class="botones-ayudas" onclick="agrandar()" aria-label="Aumentar tamaño de letra">A+</button>
+          <button class="botones-ayudas" onclick="achicar()" aria-label="Reducir tamaño de letra">A-</button>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo_upb_virtual_md.svg" alt="UPB Virtual" width="100px" height="auto">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#" class="tab-link" data-tab="seccion2"><i class="bi bi-compass ico-tab"></i>Inicio</a></li>
+            <li id="navActividad" class="nav-oculto"><a href="#" class="tab-link" data-tab="seccion3"><i class="bi bi-map ico-tab"></i>El mapa de errores</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+    <!-- Portada
+         Fondo azul profundo + red neuronal (canvas, cabezote.js) + el mundo
+         (cabezote-mundo.webp, fondo transparente) que gira despacio con los
+         puntos de error encima, y el ícono de advertencia flotando a su lado. -->
+    <section id="seccion1" class="hero hero-mapa section light-background">
+      <canvas class="hero-neural" id="heroNeural" aria-hidden="true"></canvas>
+
+      <div class="mundo-marco" aria-hidden="true">
+        <div class="mundo">
+          <div class="mundo__giro">
+            <img class="mundo__foto" src="assets/img/cabezote-mundo.webp" alt="" width="1200" height="760">
+            <span class="mundo__atmosfera"></span>
+            <!-- errores que se encienden sobre el mapa (giran con el mundo) -->
+            <span class="mundo__error" style="--x:59.6%; --y:32.1%; --d:0s"></span>
+            <span class="mundo__error" style="--x:74.5%; --y:55.6%; --d:1.6s"></span>
+            <span class="mundo__error" style="--x:36.6%; --y:64.2%; --d:3.2s"></span>
+            <span class="mundo__error" style="--x:50.8%; --y:83.4%; --d:4.8s"></span>
+          </div>
+          <img class="mundo__alerta" src="assets/img/advertencia.png" alt="" width="96" height="96">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-chip hero-in"><span class="hero-dot" aria-hidden="true"></span>Unidad 3 ⏐ Actividad de emparejamiento</span>
+          <h1 class="titulo-contenido hero-in"><span>El mapa de errores de Sofía</span></h1>
+          <p class="subtitulo-contenido hero-lead hero-in"><span>Descubre por qué Sofía huye de lo difícil y ayúdala a quedarse en la casilla que la hace aprender.</span></p>
+          <div class="hero-in">
+            <button type="button" class="hero-cta" id="heroCta">Empezar <i class="bi bi-arrow-down" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,10 480,60 720,36 C960,12 1200,52 1440,28 L1440,60 L0,60 Z"></path>
+      </svg>
+    </section><!-- /Portada -->
+
+    <!-- ===================== SECCIÓN 1: TU MISIÓN ===================== -->
+    <section id="seccion2" class="tab-content active">
+      <div class="container seccion-mapa">
+        <h1 data-aos="fade-up">Tu misión</h1>
+        <br>
+        <!--EMPIECE A INGRESAR SU CÓDIGO AQUÍ DEBAJO-->
+
+        <div class="row g-4 align-items-stretch mb-5">
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="tarjeta-mision h-100">
+              <div class="sofia-wrap">
+                <!-- Ilustración de Sofía investigando -->
+                <svg class="sofia-avatar" viewBox="0 0 220 270" role="img" aria-label="Ilustración de Sofía, una niña de cabello café, con uniforme de camisa azul y una lupa y un signo de interrogación">
+                  <circle cx="110" cy="150" r="102" class="sofia-fondo" />
+                  <!-- cabello largo de atrás -->
+                  <path d="M60 112 C58 70 84 46 110 46 C136 46 162 70 160 112 L164 198 Q163 208 152 208 L68 208 Q57 208 56 198 Z" fill="#5E3720" />
+                  <!-- moños -->
+                  <circle cx="70" cy="58" r="19" fill="#7B4A2B" />
+                  <circle cx="150" cy="58" r="19" fill="#7B4A2B" />
+                  <path d="M60 76 L84 52" stroke="#F86A63" stroke-width="8" stroke-linecap="round" />
+                  <path d="M160 76 L136 52" stroke="#F86A63" stroke-width="8" stroke-linecap="round" />
+                  <!-- brazo con lupa -->
+                  <g class="sofia-lupa">
+                    <path d="M62 226 C48 218 44 204 50 190" stroke="#F7BB98" stroke-width="16" fill="none" stroke-linecap="round" />
+                    <path d="M62 228 C55 224 50 219 47.5 213" stroke="#3457c9" stroke-width="20" fill="none" stroke-linecap="round" />
+                    <line x1="44" y1="180" x2="34" y2="160" stroke="#000087" stroke-width="7" stroke-linecap="round" />
+                    <circle cx="50" cy="188" r="9.5" fill="#FFD5B8" />
+                    <circle cx="26" cy="140" r="22" fill="rgba(255,255,255,.75)" stroke="#000087" stroke-width="6" />
+                    <text x="26" y="149" text-anchor="middle" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#3037bc">?</text>
+                  </g>
+                  <!-- cuerpo: camisa azul del uniforme -->
+                  <g transform="translate(0 -14)">
+                  <path d="M48 284 C48 216 76 192 110 192 C144 192 172 216 172 284 Z" fill="#4a74e8" />
+                  <path d="M48 284 C48 222 66 200 86 194 C74 206 66 228 66 284 Z" fill="#3457c9" />
+                  <path d="M100 160 h20 v30 l-10 14 l-10 -14 Z" fill="#F7BB98" />
+                  <path d="M95 192 L110 206 L125 192 L125 199 L110 216 L95 199 Z" fill="#2a47b0" />
+                  <path d="M93 190 L110 207 L100 218 L86 199 Z" fill="#fff" />
+                  <path d="M127 190 L110 207 L120 218 L134 199 Z" fill="#eef2ff" />
+                  <circle cx="110" cy="230" r="2.8" fill="#fff" /><circle cx="110" cy="248" r="2.8" fill="#fff" /><circle cx="110" cy="266" r="2.8" fill="#fff" />
+                  </g>
+                  <!-- orejas -->
+                  <circle cx="68" cy="122" r="10" fill="#F7BB98" />
+                  <circle cx="152" cy="122" r="10" fill="#FFD5B8" />
+                  <!-- cara -->
+                  <path d="M68 112 C68 84 86 70 110 70 C134 70 152 84 152 112 C152 144 134 164 110 164 C86 164 68 144 68 112 Z" fill="#FFD5B8" />
+                  <path d="M68 112 C68 96 74 84 84 78 C78 92 76 108 78 124 C80 142 92 156 110 164 C86 164 68 144 68 112 Z" fill="#F7BB98" opacity=".6" />
+                  <!-- flequillo -->
+                  <path d="M64 104 C62 76 84 52 110 52 C136 52 158 76 156 104 L156 102 L141 102 Q138 102 137 99 L132 86 L127 99 Q126 102 123 102 L114 102 Q111 102 110 99 L106 86 L101 99 Q100 102 97 102 L88 102 Q85 102 84 99 L80 87 L76 99 Q75 102 72 102 L64 102 Z" fill="#7B4A2B" />
+                  <path d="M64 104 C62 86 74 64 92 56 C82 68 76 86 76 102 L64 102 Z" fill="#5E3720" opacity=".45" />
+                  <!-- ojos -->
+                  <g class="sofia-ojos">
+                    <rect x="92.5" y="111" width="7" height="13" rx="3.5" fill="#B5674C" />
+                    <rect x="120.5" y="111" width="7" height="13" rx="3.5" fill="#B5674C" />
+                  </g>
+                  <!-- mejillas -->
+                  <ellipse cx="84" cy="131" rx="8.5" ry="5" fill="#F5A3AE" />
+                  <ellipse cx="136" cy="131" rx="8.5" ry="5" fill="#F5A3AE" />
+                  <!-- sonrisa -->
+                  <path d="M97 136 Q110 134.5 123 136 Q121.5 150 110 150.5 Q98.5 150 97 136 Z" fill="#F9605C" />
+                  <!-- signo de interrogación flotante -->
+                  <g class="sofia-pregunta">
+                    <circle cx="184" cy="38" r="22" fill="#f5b82e" />
+                    <text x="184" y="47" text-anchor="middle" font-family="Poppins, sans-serif" font-size="26" font-weight="700" fill="#000087">?</text>
+                  </g>
+                </svg>
+                <div>
+                  <h3 class="mb-2" style="font-size:16pt;">Instrucciones</h3>
+                  <div class="burbuja">
+                    <p>Ya sabes lo que se siente querer evitar lo difícil. Ahora te toca mirar de cerca los comportamientos de Sofía, clasificarlos, y ayudarle a entender por qué le pasa lo que le pasa.</p>
+                    <p>A continuación, verás una serie de situaciones en las que Sofía se enfrenta a un reto. <strong>Tu misión es emparejar cada comportamiento con el concepto teórico que lo explica y con la recomendación que la ayudará a quedarse en la casilla difícil.</strong></p>
+                  </div>
+                  <p class="mt-3 mb-0 d-flex gap-2" style="color:var(--mapa-muted);"><i class="bi bi-lightbulb-fill" style="color:var(--mapa-gold);"></i><span>Lee con calma cada situación: no todos los errores se solucionan con la misma estrategia.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="tarjeta-mision h-100 d-flex flex-column justify-content-center">
+              <h3 class="mb-3" style="font-size:16pt;"><i class="bi bi-hand-index-thumb me-2"></i>Cómo mover las piezas</h3>
+              <div class="como-mover" style="grid-template-columns:1fr;">
+                <div class="item"><i class="bi bi-mouse2"></i><p><strong>En computador:</strong> arrastra cada pieza desde el panel lateral hasta la casilla del caso, o haz clic en la pieza y luego en la casilla.</p></div>
+                <div class="item"><i class="bi bi-phone"></i><p><strong>En celular o tablet:</strong> toca una casilla vacía y elige la pieza de la lista.</p></div>
+                <div class="item"><i class="bi bi-check2-circle"></i><p>Cuando completes las 12 casillas, pulsa <strong>Comprobar mi mapa</strong>.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-center mb-2" data-aos="fade-up">La ruta de cada caso</h2>
+        <p class="lead-mapa" data-aos="fade-up">Cada situación de Sofía se lee como una consulta: primero el síntoma, luego el diagnóstico y al final el tratamiento.</p>
+        <div class="ruta-pasos mb-5">
+          <div class="paso" data-aos="zoom-in" data-aos-delay="0">
+            <div class="paso-icono"><i class="bi bi-clipboard2-pulse"></i></div>
+            <span class="paso-num">Paso 1</span>
+            <h3>El síntoma</h3>
+            <p>Lee el comportamiento de Sofía. Esta columna está fija.</p>
+          </div>
+          <div class="paso" data-aos="zoom-in" data-aos-delay="200">
+            <div class="paso-icono"><i class="bi bi-search-heart"></i></div>
+            <span class="paso-num">Paso 2</span>
+            <h3>El diagnóstico</h3>
+            <p>Ubica el concepto de la unidad que explica ese comportamiento.</p>
+          </div>
+          <div class="paso" data-aos="zoom-in" data-aos-delay="400">
+            <div class="paso-icono"><i class="bi bi-capsule-pill"></i></div>
+            <span class="paso-num">Paso 3</span>
+            <h3>El tratamiento</h3>
+            <p>Elige la recomendación que la ayudará a quedarse en lo difícil.</p>
+          </div>
+        </div>
+
+        <div class="insignia-teaser mb-4" data-aos="fade-up">
+          <img class="mini-badge" id="miniBadge" src="assets/img/el-mapa-errores.png" alt="" width="92" height="92">
+          <div class="flex-grow-1">
+            <h3 id="teaserTitulo">Insignia «El mapa de errores»</h3>
+            <p id="teaserTexto">Diagnostica correctamente los seis casos de Sofía para desbloquearla.</p>
+          </div>
+          <button class="btn-mapa" id="btnEmpezar" style="background:#fff;color:#000087;"><i class="bi bi-play-fill"></i> Empezar la actividad</button>
+        </div>
+
+      </div>
+    </section><!-- /Fin del primer section -->
+
+    <!-- ===================== SECCIÓN 2: ACTIVIDAD ===================== -->
+    <section id="seccion3" class="tab-content">
+      <div class="container seccion-mapa">
+        <h1>El mapa de errores de Sofía</h1>
+        <p class="lead-mapa">Empareja cada comportamiento con su diagnóstico y su tratamiento.</p>
+
+        <div class="actividad-head">
+          <div>
+            <h2><i class="bi bi-map me-2"></i>Los seis casos de Sofía</h2>
+            <p class="d-none d-lg-block">Arrastra las piezas del panel derecho a cada caso. También puedes hacer clic en una casilla para elegir.</p>
+            <p class="d-lg-none">Toca una casilla vacía para elegir el diagnóstico o el tratamiento.</p>
+          </div>
+          <div class="progreso" aria-live="polite">
+            <div class="etq"><span>Casillas completas</span><span id="progTxt">0 de 12</span></div>
+            <div class="barra"><span id="progBar"></span></div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="tablero" id="tablero"></div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside class="banco" aria-label="Piezas disponibles">
+              <h3><i class="bi bi-grid-3x2-gap-fill"></i>Piezas disponibles</h3>
+              <div class="seg" role="tablist">
+                <button class="activo" data-banco="b" role="tab" aria-selected="true"><i class="bi bi-search-heart"></i>Diagnósticos <span class="cont" id="contB">6</span></button>
+                <button data-banco="c" role="tab" aria-selected="false"><i class="bi bi-capsule-pill"></i>Tratamientos <span class="cont" id="contC">6</span></button>
+              </div>
+              <div class="banco-lista" id="bancoLista" data-zona="banco"></div>
+              <p class="banco-ayuda"><i class="bi bi-info-circle"></i>Para devolver una pieza, arrástrala de nuevo aquí o pulsa la X.</p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="acciones">
+          <button class="btn-mapa" id="btnComprobar"><i class="bi bi-check2-circle"></i> Comprobar mi mapa</button>
+          <button class="btn-mapa secundario" id="btnReiniciar"><i class="bi bi-arrow-repeat"></i> Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Selector de piezas -->
+  <div class="capa" id="capaSelector" aria-hidden="true">
+    <div class="hoja" role="dialog" aria-modal="true" aria-labelledby="hojaTitulo">
+      <div class="hoja-top">
+        <div>
+          <h3 id="hojaTitulo">Elige el diagnóstico</h3>
+          <p id="hojaSub">Caso 1</p>
+        </div>
+        <button class="hoja-cerrar" id="hojaCerrar" aria-label="Cerrar"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="hoja-lista" id="hojaLista"></div>
+      <button class="hoja-quitar" id="hojaQuitar"><i class="bi bi-x-circle me-1"></i>Quitar la pieza de esta casilla</button>
+    </div>
+  </div>
+
+  <!-- Retroalimentación -->
+  <div class="modal-mapa" id="modalFeedback" aria-hidden="true">
+    <div class="modal-caja" role="dialog" aria-modal="true" aria-labelledby="fbTitulo">
+      <div id="fbVisual"></div>
+      <h2 id="fbTitulo"></h2>
+      <span class="puntaje" id="fbPuntaje"></span>
+      <p id="fbTexto"></p>
+      <div class="acciones mt-3" id="fbAcciones"></div>
+    </div>
+  </div>
+
+  <div class="aviso" id="aviso" role="status"><i class="bi bi-info-circle-fill"></i><span id="avisoTxt"></span></div>
+  <canvas id="confeti"></canvas>
+
+  <footer id="footer" class="footer">
+
+    <div class="container copyright mt-4">
+      <p><strong class="sitename">Curso:</strong> Aprender a aprender.</p>
+      <div class="credits">
+        <p><b>Experto temático:</b> Mateo Muñetones Rico.</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!--cambiar el tamaño de la letra-->
+  <script src="assets/js/tamano-letra.js"></script>
+
+  <!--Cambiar al modo oscuro-->
+  <script src="assets/js/modo-oscuro.js"></script>
+
+  <!-- Lógica de la actividad -->
+  <script src="assets/js/mapa-errores.js"></script>
+
+  <!-- Cabezote animado: red neuronal y botón "Empezar" -->
+  <script src="assets/js/cabezote.js"></script>
+
+</body>
+
+</html>

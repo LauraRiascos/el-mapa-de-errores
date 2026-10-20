@@ -1,0 +1,61 @@
+/*!
+ * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
+ * Copyright 2019-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
+ *
+ * Versión reducida: solo los íconos que usa este recurso.
+ * Si más adelante se necesita otro ícono, reemplaza esta carpeta por la
+ * de Bootstrap Icons completa.
+ */
+
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("./fonts/bootstrap-icons.woff2?v=reducida") format("woff2");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-arrow-down::before { content: "\f128"; }
+.bi-arrow-left-right::before { content: "\f12b"; }
+.bi-arrow-repeat::before { content: "\f130"; }
+.bi-arrow-up-short::before { content: "\f145"; }
+.bi-box-arrow-right::before { content: "\f1c3"; }
+.bi-capsule-pill::before { content: "\f7de"; }
+.bi-check-lg::before { content: "\f633"; }
+.bi-check2-all::before { content: "\f26f"; }
+.bi-check2-circle::before { content: "\f270"; }
+.bi-clipboard2-pulse::before { content: "\f730"; }
+.bi-compass::before { content: "\f2d1"; }
+.bi-exclamation-circle-fill::before { content: "\f332"; }
+.bi-exclamation-triangle-fill::before { content: "\f33a"; }
+.bi-grid-3x2-gap-fill::before { content: "\f3f5"; }
+.bi-hand-index-thumb::before { content: "\f402"; }
+.bi-hand-index-thumb-fill::before { content: "\f401"; }
+.bi-info-circle::before { content: "\f431"; }
+.bi-info-circle-fill::before { content: "\f430"; }
+.bi-lightbulb-fill::before { content: "\f468"; }
+.bi-list::before { content: "\f479"; }
+.bi-map::before { content: "\f47f"; }
+.bi-moon-stars-fill::before { content: "\f495"; }
+.bi-mouse2::before { content: "\f49b"; }
+.bi-phone::before { content: "\f4e7"; }
+.bi-play-fill::before { content: "\f4f4"; }
+.bi-search-heart::before { content: "\f787"; }
+.bi-signpost-split-fill::before { content: "\f548"; }
+.bi-x::before { content: "\f62a"; }
+.bi-x-circle::before { content: "\f623"; }
+.bi-x-lg::before { content: "\f659"; }
